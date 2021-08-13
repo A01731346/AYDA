@@ -1,0 +1,11 @@
+
+OPENING_CHARS, CLOSING_CHARS = '([', ')]'def parentesis(parentesis_string):
+    if not parentesis_string:
+        return True
+    for i, character in enumerate(parentesis_string):
+        if character in CLOSING_CHARS:
+            index = CLOSING_CHARS.index(character)
+            if parentesis_string[i-1] != OPENING_CHARS[index]:
+                return False
+            return parentesis(parentesis_string[:i-1] + parentesis_string[i+1:])
+    return False
