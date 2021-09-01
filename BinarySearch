@@ -8,7 +8,7 @@ public class BinarySearch {
         int index = -1;
         int middle;
     
-        //Base case where the lower index is higher than the high index representing you sorted all the array without founding the value by reaching a one element array:
+        
     
         if(lo > hi){
     
