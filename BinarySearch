@@ -46,7 +46,7 @@ public class BinarySearch {
 
         int searchedNumberIndex = binarySearch(arr, 0, arr.length -1, 13);
         
-        System.out.println(searchedNumberIndex);
+        System.out.println( "El elemento esta en la posicion: "+ searchedNumberIndex);
 
     }   
 }
