@@ -1,10 +1,10 @@
-/* 
-   Ethienne J. Cruz Gutiérrez | A01731346
-   Análisis y diseño de algoritmos
-   Grafo de adyacencia DFS
+
+  # Ethienne J. Cruz Gutiérrez | A01731346
+  # Análisis y diseño de algoritmos
+  # Grafo de adyacencia DFS
    
-   Instrucciones: Implementar DFS sobre un grafo que utilice matrices de adyacencia en lugar de listas ligadas
-*/
+  # Instrucciones: Implementar DFS sobre un grafo que utilice matrices de adyacencia en lugar de listas ligadas
+
 
 
 from pyvis import network as net
