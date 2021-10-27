@@ -1,0 +1,33 @@
+# NOMBRE: ETHIENNE J. CRUZ GUTIÉRREZ | A01731346
+
+# INSTRUCCIONES:
+# Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+
+ ================================================================================================
+def ConvertIntToRoman(num):
+    char = ['I','V','X','L','C','D','M']
+    offset = 4-len(num)
+    roma = ''
+    for i in range(4-offset):
+        dig = int(num[(-i)-1])
+        if (dig < 4):
+            roma = (dig * (char[(i * 2)])) + roma
+        elif(dig == 4):
+            roma = (char[(i * 2)]) + (char[(i*2)+1]) + roma
+        elif(dig == 5):
+            roma = (char[(i*2)+1]) + roma
+        elif (dig > 5 and dig < 9):
+            roma = (char[(i * 2) + 1]) + ((dig-5) * (char[(i * 2)])) + roma
+        elif (dig == 9):
+            roma = (char[(i * 2)]) + (char[(i*2)+2]) + roma
+    return roma
+
+while (True):
+    print("C O N V E R T I D O R  D E   E N T E R O    A   R O M A N O")
+    print("Entrada: ")
+    num = input()
+    if(int(num) < 4000):
+        roma = ConvertIntToRoman(num)
+        print("El número romano es: " + num + " || " + roma)
+    else:
+        print("- Ingresa un numero menor a 4000\n- Intentalo de nuevo. \n")
